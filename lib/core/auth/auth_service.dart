@@ -38,11 +38,11 @@ class AuthException implements Exception {
 class AuthService {
   AuthService() {
     _storage = SecureCognitoStorage(const FlutterSecureStorage());
-    _pool = UserPool(AppConfig.userPoolId, AppConfig.clientId, storage: _storage);
+    _pool = CognitoUserPool(AppConfig.userPoolId, AppConfig.clientId, storage: _storage);
   }
 
   late final SecureCognitoStorage _storage;
-  late final UserPool _pool;
+  late final CognitoUserPool _pool;
   CognitoUser? _user;
 
   /// Restore a saved session (refreshes automatically if the access token expired).
