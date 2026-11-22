@@ -3,13 +3,13 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'core/auth/auth_state.dart';
 import 'core/router/app_router.dart';
 import 'core/theme.dart';
+import 'features/admin/admin_home.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(ProviderScope(
     overrides: [
-      // Claude D replaces this with features/admin/admin_home.dart
-      adminHomeProvider.overrideWithValue(const _Placeholder('Admin')),
+      adminHomeProvider.overrideWithValue(const AdminHome()),
       // Claude E replaces this with the student UI
       studentHomeProvider.overrideWithValue(const _Placeholder('Student')),
     ],
