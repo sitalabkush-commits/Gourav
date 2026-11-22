@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "255026552280",
+    "project_id": "gourav-b5130",
+    "storage_bucket": "gourav-b5130.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255026552280:android:4cd20367b8735a92b126ad",
+        "android_client_info": {
+          "package_name": "com.example.gourab_app_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA08y1hwZkCDYdcnNmPqxCaKCfAu6-3oK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
